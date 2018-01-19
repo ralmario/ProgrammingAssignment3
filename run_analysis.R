@@ -58,7 +58,7 @@ rm(sourceFolder, subjectTest, xTest, yTest, subjectTrain, xTrain, yTrain,
 message("Merged into 1 harDataset data frame...")
 
 ## 2. Remove non-mean and SD measurements in each measure
-harDataset <- harDataset[,grep("subject|mean|std|activity", 
+harDataset <- harDataset[,grep("subject|mean\\(\\)|std\\(\\)|activity", 
                                colnames(harDataset))]
 
 message("Subsetted harDataset with only mean and measurements measures...")
@@ -72,11 +72,11 @@ rm(activityLabels);
 
 ## 4. Assign proper descriptive labels
 harDatasetColNames <- names(harDataset)
-properLabels <- cbind(c("Body", "Gravity", "Acc", "Gyro", "Mag", "Freq\\(\\)", 
-                 "mean\\(\\)", "std\\(\\)", "X$", "Y$", "Z$", "^t", "^f", "bodybody"), 
-                 c("body", "gravity", "acceleration", "gyroscope", "magnitude", 
-                 "frequency", "mean", "stddev", "x-axis", "y-axis", "z-axis", 
-                 "time", "frequencydomainsignal", "body")
+properLabels <- cbind(c("Body", "Gravity", "Acc", "Gyro", "Mag", "mean\\(\\)", 
+                        "std\\(\\)", "X$", "Y$", "Z$", "^t", "^f", "bodybody"), 
+                        c("body", "gravity", "acceleration", "gyroscope", 
+                        "magnitude", "mean", "stddev", "x-axis", "y-axis", 
+                        "z-axis", "time", "frequencydomainsignal", "body")
                 )
 
 #gsub loops to the pattern and replacement rules in the properLabel variable
@@ -97,8 +97,8 @@ secondharDataset <- summarize_all(secondharDataset, funs(mean))
 message("Exporting...")
 
 # Export the dataset to hardatasetbygroupactivity.txt
-write.table(secondharDataset, file = "har_data_by_group_activity.txt", sep = ",",  
-            quote = FALSE, row.names = FALSE)
+write.table(secondharDataset, file = "har_data_by_group_activity.txt", 
+            sep = ",", quote = FALSE, row.names = FALSE)
 
 message("Exported har_data_by_group_activity.txt...")
 message("You can access Step 4 (harDataset) and 5 (secondharDataset) vars...")

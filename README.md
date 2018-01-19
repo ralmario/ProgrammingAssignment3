@@ -11,4 +11,4 @@ This project is the work of __Ranxel Almario__.
 1. Just download **run\_analysis.R** and put it in your R current working directory.
 2. Execute "source("run\_analysis.R")" in R (without quotes).
 
-_Note: run\_analysis.R script is created and ran in R version 3.4.2 (Windows x64). Tested in R version 3.4.3 (Windows x64)._
+_Note: run\_analysis.R script is created and ran in R version 3.4.2 (winx64 x64). Tested in R version 3.4.3 (winx64)._
