@@ -100,6 +100,6 @@ message("Exporting...")
 write.table(secondharDataset, file = "har_data_by_group_activity.txt", sep = ",",  
             quote = FALSE, row.names = FALSE)
 
-message("Exported hardatasetbygroupactivity.txt...")
+message("Exported har_data_by_group_activity.txt...")
 message("You can access Step 4 (harDataset) and 5 (secondharDataset) vars...")
 message("...End script")
