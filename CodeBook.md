@@ -43,4 +43,4 @@ Using the above-mentioned files, this script does the following:
 
 ## Citations:
 
-* UCI Machine Learning Repository: Human Activity Recognition Using Smartphones Data Set. (2012, December 10). Retrieved January 19, 2018, from http://archive.ics.uci.edu/ml/datasets/Human Activity Recognition Using Smartphones
+* UCI Machine Learning Repository: Human Activity Recognition Using Smartphones Data Set. (2012, December 10). Retrieved January 19, 2018, from [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
