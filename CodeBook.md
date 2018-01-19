@@ -1,5 +1,6 @@
 # Human Activity Recognition Using Smartphones Dataset (Getting and Cleaning Data Peer Assignment 3) Codebook
 Original data files: [http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip](http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip)
+
 Data cleaned and worked by: Ranxel Almario
 
 ## Dataset Information:
@@ -24,7 +25,7 @@ The set of variables that were estimated from these signals are:
 
 ## Transformations:
 
-The created R script (named run_analysis.R) uses the following files in the Human Activity Recognition dataset files:
+The created R script (named run_analysis.R) uses the following files in the Human Activity Recognition dataset:
 1. **features_info.txt**: Shows information about the variables used on the feature vector.
 2. **features.txt**: List of all features.
 3. **activity_labels.txt**: Links the class labels with their activity name.
@@ -39,3 +40,7 @@ Using the above-mentioned files, this script does the following:
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, exports a second, comma-delimited, tidy dataset  with the average of each variable for each activity and each subject (named as "har\_data\_by\_group\_activity.txt")
+
+## Citations:
+
+* UCI Machine Learning Repository: Human Activity Recognition Using Smartphones Data Set. (2012, December 10). Retrieved January 19, 2018, from http://archive.ics.uci.edu/ml/datasets/Human Activity Recognition Using Smartphones
